@@ -1,0 +1,10 @@
+.example-card {
+  max-width: 300px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 64px);
+}

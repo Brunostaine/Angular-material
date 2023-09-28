@@ -1,0 +1,17 @@
+<mat-toolbar color="primary">
+  <mat-icon (click)="snav.toggle()" class="icon">menu</mat-icon>
+  <span>Angular Material</span>
+</mat-toolbar>
+
+<mat-sidenav-container>
+  <mat-sidenav class="sidenav" #snav mode="push" opened="false">
+    <mat-nav-list>
+      <mat-list-item>
+        <a routerLink="/card" class="link" mat-button><mat-icon class="icon">dashboard</mat-icon>Card</a>
+      </mat-list-item>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content class="app">
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
