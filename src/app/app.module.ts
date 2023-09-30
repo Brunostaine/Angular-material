@@ -11,23 +11,26 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 
 import { MatCardModule } from '@angular/material/card';
-import { CoreModule } from './core/core.module';
 import { HomeComponent } from './home/home.component';
 import { SidnavComponent } from './sidnav/sidnav.component';
 
+import { MatGridListModule } from '@angular/material/grid-list';
+import { GridListComponent } from './grid-list/grid-list.component';
+
 @NgModule({
-  declarations: [AppComponent, SidnavComponent, HomeComponent],
+  declarations: [AppComponent, SidnavComponent, HomeComponent, GridListComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    CoreModule,
+
 
     MatSidenavModule,
     MatToolbarModule,
     MatIconModule,
     MatListModule,
     MatCardModule,
+    MatGridListModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

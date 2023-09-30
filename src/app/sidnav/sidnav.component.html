@@ -5,9 +5,21 @@
 
 <mat-sidenav-container>
   <mat-sidenav class="sidenav" #snav mode="push" opened="false">
-    <mat-nav-list>
+    <mat-nav-list (click)="snav.toggle()">
       <mat-list-item>
-        <a routerLink="/card" class="link" mat-button><mat-icon class="icon">dashboard</mat-icon>Card</a>
+        <a routerLink="/" class="link" mat-button
+          ><mat-icon class="icon">home</mat-icon>Home</a
+        >
+      </mat-list-item>
+      <mat-list-item>
+        <a routerLink="/card" class="link" mat-button
+          ><mat-icon class="icon">dashboard</mat-icon>Card</a
+        >
+      </mat-list-item>
+      <mat-list-item>
+        <a routerLink="/grid-list" class="link" mat-button
+          ><mat-icon class="icon">dashboard</mat-icon>Grid-list</a
+        >
       </mat-list-item>
     </mat-nav-list>
   </mat-sidenav>
