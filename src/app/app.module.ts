@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 
@@ -15,15 +16,21 @@ import { HomeComponent } from './home/home.component';
 import { SidnavComponent } from './sidnav/sidnav.component';
 
 import { MatGridListModule } from '@angular/material/grid-list';
-import { GridListComponent } from './grid-list/grid-list.component';
+import { CardsComponent } from './components/cards/cards.component';
+import { GridListComponent } from './components/grid-list/grid-list.component';
 
 @NgModule({
-  declarations: [AppComponent, SidnavComponent, HomeComponent, GridListComponent],
+  declarations: [
+    AppComponent,
+    SidnavComponent,
+    HomeComponent,
+    GridListComponent,
+    CardsComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-
 
     MatSidenavModule,
     MatToolbarModule,
@@ -31,6 +38,7 @@ import { GridListComponent } from './grid-list/grid-list.component';
     MatListModule,
     MatCardModule,
     MatGridListModule,
+    MatProgressBarModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
