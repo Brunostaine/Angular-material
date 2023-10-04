@@ -1,0 +1,14 @@
+<div class="container-badge">
+  <h1>Badges</h1>
+  <button
+    [matBadge]="badges"
+    matBadgeColor="accent"
+    matBadgePosition="before"
+    mat-raised-button
+    color="primary"
+    [matBadgeHidden]="hidden"
+    (click)="toggleBadgeVisibility()"
+  >
+    Ação
+  </button>
+</div>
