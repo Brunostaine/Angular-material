@@ -21,6 +21,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { BadgeComponent } from './components/badge/badge.component';
 import { CardsComponent } from './components/cards/cards.component';
 import { GridListComponent } from './components/grid-list/grid-list.component';
+import { ProgressBarComponent } from './components/progress-bar/progress-bar.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { GridListComponent } from './components/grid-list/grid-list.component';
     GridListComponent,
     CardsComponent,
     BadgeComponent,
+    ProgressBarComponent,
   ],
   imports: [
     BrowserModule,
