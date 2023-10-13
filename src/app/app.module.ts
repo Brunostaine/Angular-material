@@ -18,11 +18,13 @@ import { SidnavComponent } from './sidnav/sidnav.component';
 
 import { MatButtonModule } from '@angular/material/button';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { MatRadioModule } from '@angular/material/radio';
 import { BadgeComponent } from './components/badge/badge.component';
 import { CardsComponent } from './components/cards/cards.component';
 import { GridListComponent } from './components/grid-list/grid-list.component';
 import { ProgressBarComponent } from './components/progress-bar/progress-bar.component';
-
+import { RadioButtonComponent } from './components/radio-button/radio-button.component';
+import { ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,11 +34,13 @@ import { ProgressBarComponent } from './components/progress-bar/progress-bar.com
     CardsComponent,
     BadgeComponent,
     ProgressBarComponent,
+    RadioButtonComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    ReactiveFormsModule,
 
     MatSidenavModule,
     MatToolbarModule,
@@ -47,6 +51,7 @@ import { ProgressBarComponent } from './components/progress-bar/progress-bar.com
     MatProgressBarModule,
     MatBadgeModule,
     MatButtonModule,
+    MatRadioModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,0 +1,15 @@
+<form [formGroup]="radio">
+  <mat-radio-group formControlName="escolha">
+    <mat-radio-button class="example-margin" value="after"
+      >After</mat-radio-button
+    >
+    <mat-radio-button class="example-margin" value="before"
+      >Before</mat-radio-button
+    >
+  </mat-radio-group>
+</form>
+
+<p>
+  Valor selecionado:
+  <span [ngClass]="valueSelected">{{ valueSelected }}</span>
+</p>
